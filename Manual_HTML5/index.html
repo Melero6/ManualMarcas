@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Manual HTML5</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jorge Melero Gómez">
+	</head>
+	<body>
+		<a id="principio"></a>
+		<section>
+			<h1>Manual HTML5</h1>
+			<article>
+				<h3>¿Que es HTML5?</h3>
+				<p>
+					HTML5 es un lenguaje markup (de hecho, las siglas de HTML significan Hyper Text Markup Language) usado para estructurar y presentar el contenido para la web.
+					Es uno de los aspectos fundamentales para el funcionamiento de los sitios, pero no es el primero.
+					Es de hecho la quinta revisión del estándar que fue creado en 1990.
+					La W3C recomendó el uso de HTML5 para transformarse en el estándar a ser usado en el desarrollo de proyectos venideros. 
+				</p>
+				<br>
+			</article>
+			<article>
+				<h3>¿De qué se compone HTML5?</h3>
+				<p>
+					El HTML está compuesto por etiquetas, que contienen el elemento y también puede contener atributos.
+					Por ejemplo:
+				</p>
+				<pre>&lt;html lang="es"&gt;&lt;/html&gt;</pre>
+				<p>
+					La etiqueta está formada por el elemento <b>&lt;html&gt;</b> y tiene el atributo <b>lang=""</b> (define el idioma del documento), también tiene una etiqueta de cierre que contendrá un <b>"/"</b> delante del elemento.
+					También existen etiquetas con elementos vacios en las que no se pone etiqueta de cierre, como es el caso de la etiqueta <b>&lt;hr&gt;</b>.
+				</p>
+				<br>
+			</article>
+			<article>
+				<h3>Estructura de un documento HTML</h3>
+				<p>
+					La estructura principal de un documento HTML está formado por:
+				</p>
+				<pre>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>	&lt;head&gt;<br>	&lt;/head&gt;<br>	&lt;body&gt;<br>	&lt;/body&gt;<br>&lt;/html&gt;</pre>
+				<p>
+					En la etiqueta <B>&lt;!DOCTYPE&gt;</B> escribimos el tipo de documento, en este caso html. A continuación abrimos la etiqueta <b>&lt;html&gt;&lt;/html&gt;</b> que contendrá todo el código.<br> Dentro de <b>&lt;html&gt;&lt;/html&gt;</b> tenemos la etiqueta <b>&lt;head&gt;&lt;/head&gt;</b>, que contiene metadatos de nuestro documento y la etiqueta <b>&lt;body&gt;&lt;/body&gt;</b>, que contiene toda la parte visual de nuestro documento.
+				</p>
+				<br>
+			</article>
+			<article>
+				<h3>Etiquetas para head</h3>
+				<p>
+					El head contiene metadatos, necesarios para el documento HTML.<br>Entre el contenido del head podemos destacar las siguientes etiquetas:
+				</p>
+				<ul>
+					<li><strong>&lt;title&gt;&lt;/title&gt;</strong>: Asigna un titulo a nuestra página web, que veremos en la pestaña del navegador.
+					</li>
+					<li><strong>&lt;meta&gt;</strong>: Sirve para crear metadatos.
+					</li>
+					<ul>
+						<li><strong>&lt;metal name="author" content="Jorge"&gt;</strong>: Creamos un autor y le asignamos un contenido.
+						</li>
+						<li><strong>&lt;metal charset="utf-8"&gt;</strong>: Asigna una codificación UTF-8 a nuestro documento.
+						</li>
+					</ul>
+				</ul>
+				<br>
+			</article>
+			<article>
+				<h3>Elementos semánticos estructurales</h3>
+				<p>
+					Estas etiquetas añaden valor semántico al contenido que exista entre ellas. Varias de estas etiquetas se añaden en la versión 5 de HTML.<br>Etiquetas:
+				</p>
+				<ul>
+					<li><strong>&lt;header&gt;&lt;/header&gt;</strong>: Se usa para marcar un grupo de elementos de introducción o de navegación dentro de una sección o documento. Normalmente se usa para incluir los encabezados.
+					</li>
+					<li><strong>&lt;nav&gt;&lt;/nav&gt;</strong>: Se usa para marcar una sección del documento cuya función es la navegación por la página web. Suele estar dentro del header.
+					</li>
+					<li><strong>&lt;aside&gt;&lt;/aside&gt;</strong>: Se usa para marcar un trozo de contenido que está relacionado con el contenido de la página web, pero que no es parte del mismo. Ejemplos de uso serían: glosario de términos, grupos de enlaces a páginas relacionadas, barras laterales.
+					</li>
+					<li><strong>&lt;article&gt;&lt;/article&gt;</strong>: Se usa para marcar contenido independiente que tendría sentido fuera del contexto de la página actual y que podría sindicarse.
+					</li>
+					<li><strong>&lt;section&gt;&lt;/section&gt;</strong>: Se usa para marcar una sección genérica de un documento o aplicación. Una sección, en este contexto, es una agrupación temática del contenido, típicamente con un encabezado.
+					</li>
+					<li><strong>&lt;footer&gt;&lt;/footer&gt;</strong>: Se usa para marcar el pie de una sección o documento y que contiene información sobre el mismo como el autor, licencia, términos de uso.
+					</li>
+				</ul>
+				<br>
+			</article>
+			<article>
+				<h3>Títulos</h3>
+				<p>
+					Los títulos de asignan con la etiqueta <b>&lt;hn&gt;&lt;/hn&gt;</b> siendo n el numero que asigna la importancia y tamaño del título, este número tiene que estar entre el 1 y el 6 (incluidos). Por ejemplo:
+				</p>
+				<h1>&lt;h1&gt;&lt;/h1&gt;</h1>
+				<h2>&lt;h2&gt;&lt;/h2&gt;</h2>
+				<h3>&lt;h3&gt;&lt;/h3&gt;</h3>
+				<h4>&lt;h4&gt;&lt;/h4&gt;</h4>
+				<h5>&lt;h5&gt;&lt;/h5&gt;</h5>
+				<h6>&lt;h6&gt;&lt;/h6&gt;</h6>
+				<br>
+			</article>
+			<article>
+				<h3>Elementos de agrupación</h3>
+				<p>
+					Estas etiquetas nos permiten darle un formato al texto que se muestra en la página web.
+					Las principales son:
+				</p>
+				<ul>
+					<li><strong>&lt;p&gt;&lt;/p&gt;</strong>: Define una parte que debe mostrarse como un párrafo.
+					</li>
+					<li><strong>&lt;pre&gt;&lt;/pre&gt;</strong>: El texto aparecen en pantalla con el mismo formato que le asignamos en el documento y con un tipo de letra monoespaciada.
+					</li>
+					<li><strong>&lt;hr&gt;</strong>: Añade una línea horizontal, representa un quiebre temático entre párrafos de una sección o articulo o cualquier contenido.
+					</li>
+				</ul>
+				<p>
+					Además, existen etiquetas para formar 3 tipos de listas:
+				</p>
+				<ul>
+					<li><strong>&lt;li&gt;&lt;/li&gt;</strong>: Sirve para crear un elemento dentro de las listas ordenas y desordenadas.
+					</li>
+					<li><strong>&lt;ul&gt;&lt;/ul&gt;</strong>: Se usa para crear listas desordenadas.
+					</li>
+					<li><strong>&lt;ol&gt;&lt;/ol&gt;</strong>: Se usa para crear listas ordenandos.
+					</li>
+					<li><strong>&lt;dl&gt;&lt;/dl&gt;</strong>: Se usa para crear una lista de definiciones.
+					</li>
+					<ul>
+						<li><strong>&lt;dt&gt;&lt;/dt&gt;</strong>: Se usa para asignar el termino que queremos definir.
+						</li>
+						<li><strong>&lt;dd&gt;&lt;/dd&gt;</strong>: Se usa para añadir una definición al término.
+						</li>
+					</ul>
+				</ul>
+				<p>
+					Las listas ordenadas disponen de una serie de atributos:
+				</p>
+				<ul>
+					<li><strong>reversed=""</strong>: Invierte la numeración.
+					</li>
+					<li><strong>type=""</strong>: Sirve para seleccionar el carácter que queremos usar para numerar la lista.
+					</li>
+					<li><strong>value=""</strong>: Asigna el numero en que comenzara la lista.
+					</li>
+				</ul>
+				<br>
+			</article>
+			<article>
+				<h3>Elementos semánticos de texto</h3>
+				<p>
+					Estas etiquetas aportan un valor semántico al texto que visualizamos.
+					Las principales etiquetas se usan para resaltar el texto:
+				</p>
+				<ul>
+					<li><strong>&lt;i&gt;&lt;/i&gt;</strong>: <i>Bastardilla</i>
+					</li>
+					<li><strong>&lt;b&gt;&lt;/b&gt;</strong>: <b>Negrita</b>
+					</li>
+					<li><strong>&lt;u&gt;&lt;/u&gt;</strong>: <u>Subrayada.</u>
+					</li>
+					<li><strong>&lt;em&gt;&lt;/em&gt;</strong>: <em>Pone énfasis o recalca.</em>
+					</li>
+					<li><strong>&lt;strong&gt;&lt;/strong&gt;</strong>: <strong>Parte importante.</strong>
+					</li>
+					<li><strong>&lt;small&gt;&lt;/small&gt;</strong>: <small>Letra pequeña.</small>
+					</li>
+					<li><strong>&lt;s&gt;&lt;/s&gt;</strong>: <s>Contenido irrelevante u obsoleto.</s>
+					</li>
+				</ul>
+				<p>
+					Además existen dos etiquetas de salto de línea:
+				</p>
+				<ul>
+					<li><strong>&lt;br&gt;</strong>: Añade una salto de línea.
+					</li>
+					<li><strong>&lt;wbr&gt;</strong>: Asigna una oportunidad de salto de línea. En el caso de que la frase tenga que pasar a la siguiente línea se dividirá en este punto.
+					</li>
+				</ul>
+				<br>
+			</article>
+			<article>
+				<h3>Hiperenlace</h3>
+				<p>
+					Un hiperenlace, hipervínculo, o vínculo, es un enlace, que al seleccionarse lleva de una página web o archivo.<wbr> Se usa le etiqueta <b>&lt;a&gt;&lt;/a&gt;</b> <i>(anchor)</i> y el atributo <b>href=""</b> para indicar la dirección. Por ejemplo:
+				</p>
+				<pre>Enlace a google: &lt;a href="https://www.google.es/"&gt;Google&lt;/a&gt;</pre>
+				<p>
+					Se muestras en el navegador así: 
+				</p>
+				<pre>Enlace a google: <a href="https://www.google.es/">Google</a></pre>
+				<p>
+					Podemos usar enlaces absolutos (https://www.google.es/) o relativos (pagina.html).
+					<br>
+					Otro uso de la etiqueta <b>&lt;a&gt;&lt;/a&gt;</b> <i>(anchor)</i> junto al atributo <b>id=""</b> nos permite crear un punto en esta página u otra al que acceder. Por ejemplo:
+				</p>
+				<pre>Al comienzo de la página está escrito lo siguiente:
+&lt;a id="principio"&gt;&lt;/a&gt;</pre>
+				<pre>Para ir al principio de la página creamos una enlace:
+&lt;a href="principio"&gt;Subir&lt;/a&gt;</pre>
+				<pre>Este enlace se muestra de la siguiente forma en la página web:
+<a href="#principio">Subir</a></pre>
+				<p>
+					También podemos hacer un enlace a un elemento. Debemos añadir el atributo <b>id=""</b> en el elemento al que queremos hacer referencia. Para crear el enlace escribimos lo siguiente:
+				</p>
+				<pre>&lt;a href="#nombre_id"&gt;&lt;/a&gt;</pre>
+				<p>En el caso de querer crear un enlace a un elemento de otra página web, debemos escribir lo siguiente: </p>
+				<pre>&lt;a href="URL#nombre_id"&gt;&lt;/a&gt;</pre>
+				<p>Si quieres que se descargue el fichero al que hacer referencia el enlace, debemos añadir el atributo download. Por ejemplo:</p>
+				<pre>&lt;a href="Mifoto.png" download&gt;Descargar foto&lt;/a&gt;</pre>
+				<br>
+			</article>
+			<article>
+				<h3>Contenido encajado: imágenes</h3>
+				<p>
+					Para añadir una imagen a nuestra página web, debemos usar la etiqueta <b>&lt;img&gt;</b>. También debemos usar ciertos atributos:
+				</p>
+				<ul>
+					<li><strong>src=""</strong>: Lugar en el que se encuentra la imagen que queremos mostrar.
+					</li>
+					<li><strong>width=""</strong>: Anchura de la imagen (Pixeles).
+					</li>
+					<li><strong>height=""</strong>: Altura de la imagen (Pixeles).
+					</li>
+					<li><strong>alt=""</strong>: Comentario descriptivo de la imagen.
+					</li>
+				</ul>
+				<p>
+					Por ejemplo:
+				</p>
+				<pre>&lt;img src="perezoso.jpg" width="500" height="400" alt="Perezoso en una rama"&gt;</pre>
+				<p>
+					En el navegador se mostrará esto:
+				</p>
+				<img src="perezoso.jpg" width="500" height="400" alt="Perezoso en una rama">
+				<br>
+			</article>
+			<article>
+				<h3>Mapas de imagen</h3>
+				<p>
+					Se pueden delimitar zonas de una imagen para que te lleven a un enlace. Para ello se usa la etiqueta <b>&lt;map&gt;&lt;/map&gt;</b> y la etiqueta <b>&lt;area&gt;</b> para definir cada zona de la imagen. Además son necesarios los atributos que se mencionan a continuación:
+				</p>
+				<ul>
+					<li><strong>shape=""</strong>: Es el tipo de área que queremos crear (default, rect, circle, poly).
+					</li>
+					<li><strong>coords=""</strong>: Son las coordenadas para el tamaño del área.
+					</li>
+					<li><strong>href=""</strong>: Determina la dirección a la que hacemos referencia con la zona.
+					</li>
+					<li><strong>alt=""</strong>: Comentario descriptivo de la zona (Obligatorio si usamos "href").
+					</li>
+					<li><strong>download</strong>: Descarga el dichero del enlace.
+					</li>
+					<li><strong>tarjet=""</strong>: Permite elegir como queremos que se abra el enlace.
+					</li>
+				</ul>
+				<p>
+					Por ejemplo, vamos a crear una zona en la cabeza del perezoso que nos lleve a la página <a href="http://www.w3c.es">http://www.w3c.es</a>:
+				</p>
+				<pre>&lt;img src="perezoso.jpg" alt="Perezoso en una rama" usemap="#w3c"&gt;</pre>
+				<pre>&lt;map name="w3c"&gt;</pre>
+				<pre>	&lt;area shape="circle" coords="325,325,35" href="http://www.w3c.es" alt="Pagina de w3c"&gt;</pre>
+				<pre>&lt;/map&gt;</pre>
+				<p>
+					Ahora veamos cómo se muestra el ejemplo anterior en el navegador:
+				</p>
+				<img src="perezoso.jpg" alt="Perezoso en una rama" usemap="#w3c">
+				<map name="w3c">
+					<area shape="circle" coords="330,65,35" href="http://www.w3c.es" alt="Pagina de w3c">
+				</map>
+				<br>
+			</article>
+			<article>
+				<h3>Tablas</h3>
+				<p>
+					Se pueden crear tablas con la etiqueta <b>&lt;table&gt;&lt;/table&gt;</b>. Dentro de la etiqueta usamos las siguientes etiquetas:
+				</p>
+				<ul>
+					<li><strong>&lt;tr&gt;&lt;/tr&gt;</strong>: Crea una nueva fila a la que añadiremos columnas.
+					</li>
+					<li><strong>&lt;td&gt;&lt;/td&gt;</strong>: Crea las columna que necesitemos dentro de una fila.
+					</li>
+					<li><strong>&lt;th&gt;&lt;/th&gt;</strong>: Crea la columna de encabezado.
+					</li>
+					<ul>
+						<li><strong>rowspan=""</strong>: Es un atributo de <b>&lt;th&gt;</b> y <b>&lt;td&gt;</b>, ocupa el número de columnas hacia la derecha que se especifique.
+						</li>
+						<li><strong>colspan=""</strong>: Es un atributo de <b>&lt;th&gt;</b> y <b>&lt;td&gt;</b>, ocupa el número de filas hacia abajo que se especifique.
+						</li>
+					</ul>
+				</ul>
+				<p>
+					Además <b>&lt;table&gt;&lt;/table&gt;</b> tiene el atributo <b>border=""</b> para añadir el tamaño del borde de la tabla. <br> A continuación vamos a ver un ejemplo sencillo de un horario de trabajo:
+				</p>
+				<pre>&lt;table border="1"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Horario&lt;/th&gt;
+			&lt;th&gt;Lunes&lt;/th&gt;
+			&lt;th&gt;Martes&lt;/th&gt;
+			&lt;th&gt;Miercoles&lt;/th&gt;
+			&lt;th&gt;Jueves&lt;/th&gt;
+			&lt;th&gt;Viernes&lt;/th&gt;
+			&lt;th&gt;Fin de semana&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th>10:00-11:00&lt;/th&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td rowspan="3"&gt;Descanso&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th &gt;11:00-12:00&lt;/th&gt;
+			&lt;td colspan="5"&gt;Descanso&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;12:00-13:00&lt;/th&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+			&lt;td&gt;Trabajo&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</pre>
+				<p>Este ejemplo se muestra de la siguiente forma en nuestro navegador:</p>
+				<table border="1">
+					<tbody>
+						<tr>
+							<th>Horario</th>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miercoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+							<th>Fin de semana</th>
+						</tr>
+						<tr>
+							<th>10:00-11:00</th>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td rowspan="3">Descanso</td>
+						</tr>
+						<tr>
+							<th>11:00-12:00</th>
+							<td colspan="5">Descanso</td>
+						</tr>
+						<tr>
+							<th>12:00-13:00</th>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+							<td>Trabajo</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+			</article>
+		</section>
+	</body>
+</html>
